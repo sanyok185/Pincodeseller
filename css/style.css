@@ -1796,10 +1796,6 @@ body::after {
     height: 10.25rem;
   }
 
-  .logo {
-    font-size: 2rem;
-  }
-
   .title {
     font-size: 2.1875rem;
   }
@@ -1814,6 +1810,10 @@ body::after {
 
   .open__title {
     font-size: 2.1875rem;
+  }
+
+  .header__logo {
+    font-size: 2rem;
   }
 
   .menu__list {
@@ -2162,10 +2162,6 @@ body::after {
     height: 7.8125rem;
   }
 
-  .logo {
-    font-size: 1.25rem;
-  }
-
   .title {
     font-size: 1.625rem;
   }
@@ -2180,6 +2176,10 @@ body::after {
 
   .open__title {
     font-size: 1.625rem;
+  }
+
+  .header__logo {
+    font-size: 1.25rem;
   }
 
   .menu__list {
@@ -2900,18 +2900,6 @@ body::after {
     }
 }
 
-@supports (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem )) {
-    .logo {
-      font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem )) {
-    .logo {
-      font-size: calc(1.25rem + 0.75 * (100vw - 20rem) / 71.25);
-    }
-}
-
 @supports (font-size: clamp( 1.625rem , 1.4671052632rem  +  0.7894736842vw , 2.1875rem )) {
     .title {
       font-size: clamp( 1.625rem , 1.4671052632rem  +  0.7894736842vw , 2.1875rem );
@@ -2957,6 +2945,18 @@ body::after {
 @supports not (font-size: clamp( 1.625rem , 1.4671052632rem  +  0.7894736842vw , 2.1875rem )) {
     .open__title {
       font-size: calc(1.625rem + 0.5625 * (100vw - 20rem) / 71.25);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem )) {
+    .header__logo {
+      font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.0394736842rem  +  1.0526315789vw , 2rem )) {
+    .header__logo {
+      font-size: calc(1.25rem + 0.75 * (100vw - 20rem) / 71.25);
     }
 }
 
