@@ -620,7 +620,6 @@
         script_fail.style.display = "none";
         script_myForm.classList.remove("_form-error");
     }));
-    document.location;
     window["FLS"] = true;
     isWebp();
     menuInit();
