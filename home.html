@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230713150409">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714171938">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__about about" id="about" data-prlx-parent data-watch="navigator">
+			<section class="page__about about animation " id="about" data-prlx-parent data-watch="navigator" data-watch data-watch-threshold="0.3">
 				<div class="about__container">
 					<div class='about__tecstures' data-prlx><img src="img/tecstures.svg" alt=""></div>
 					<h2 class="about__title title" data-watch data-watch-once>
@@ -100,7 +100,7 @@
 					</a>
 				</div>
 			</section>
-			<section class="page__how how" data-watch="navigator">
+			<section id="how" class="page__how how animation " data-watch="navigator" data-watch-threshold="0.3">
 				<div class="how__container">
 					<h2 class="how__title title" data-watch data-watch-once>
 						How does it work?
@@ -161,7 +161,7 @@
 				</h2>
 				<div class="amount__container">
 					<div class="amount__items" data-watch>
-						<div class="amount__item item-amount" data-watch-threshold='0.9' data-watch data-watch_once>
+						<div class="amount__item item-amount" data-watch-threshold='0.99' data-watch data-watch_once>
 							<div class="item-amount__gift"> GIFT</div>
 							<h3 class="item-amount__price">
 								$ 15
@@ -171,7 +171,7 @@
 							</div>
 							<a href="success.html" type="button" class="item-amount__button button button_green">Buy</a>
 						</div>
-						<div class="amount__item item-amount" data-watch-threshold='0.9' data-watch data-watch_once>
+						<div class="amount__item item-amount" data-watch-threshold='0.99' data-watch data-watch_once>
 							<div class="item-amount__gift">GIFT</div>
 							<h3 class="item-amount__price">
 								$ 15
@@ -181,7 +181,7 @@
 							</div>
 							<a href="success.html" type="button" class="item-amount__button button button_green">Buy</a>
 						</div>
-						<div class="amount__item item-amount" data-watch-threshold='0.9' data-watch data-watch_once>
+						<div class="amount__item item-amount" data-watch-threshold='0.99' data-watch data-watch_once>
 							<div class="item-amount__gift">GIFT</div>
 							<h3 class="item-amount__price">
 								$ 15
@@ -191,7 +191,7 @@
 							</div>
 							<a href="success.html" type="button" class="item-amount__button button button_green">Buy</a>
 						</div>
-						<div class="amount__item item-amount" data-watch-threshold='0.9' data-watch data-watch_once>
+						<div class="amount__item item-amount" data-watch-threshold='0.99' data-watch data-watch_once>
 							<div class="item-amount__gift">GIFT</div>
 							<h3 class="item-amount__price">
 								$ 15
@@ -204,7 +204,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contact contact" data-watch="navigator">
+			<section id="contact" class="page__contact animation " data-watch="navigator" data-watch-threshold="0.3">
 				<div class="contact__container" data-prlx-parent>
 					<div class='contact__mail' data-prlx><img src="img/Parallax/mail.svg" alt=""></div>
 					<div class="contact__wrapper">
@@ -218,11 +218,11 @@
 							<div class="form__items">
 								<div class="form__item">
 									<label for="formName" class="form__label">Name</label>
-									<input data-required='name' type="text" id="formName" name="name" data-error="Invalid field, please try again" placeholder="Your Name" class="form__input input">
+									<input data-required='name' type="text" id="formName" name="name" data-error="Invalid field, please try again" placeholder="Your Name" class="form__input input input_small">
 								</div>
 								<div class="form__item">
 									<label for="formEmail" class="form__label">Email</label>
-									<input data-required='email' type="text" id="formEmail" name="email" data-error="Invalid field, please try again" placeholder="Your Email" class="form__input input">
+									<input data-required='email' type="text" id="formEmail" name="email" data-error="Invalid field, please try again" placeholder="Your Email" class="form__input input input_small">
 								</div>
 							</div>
 							<div class="form__item">
@@ -259,7 +259,7 @@
 								<li class="menu-footer__item"><a href="privacy.html" class="menu-footer__link">Privacy policy</a></li>
 								<li class="menu-footer__item"><a href="refund.html" class="menu-footer__link">Refund policy</a></li>
 								<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Delivery policy</a></li>
-								<li class="menu-footer__item"><a href="home.html" class="menu-footer__link" data-goto=".page__contact" data-goto-header>Contact us</a></li>
+								<li class="menu-footer__item"><a href="home.html#contact" class="menu-footer__link">Contact us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -286,8 +286,8 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20230713150409"></script>
-	<script src="https://www.google.com/recaptcha/api.js?_v=20230713150409" async defer></script>
+	<script src="js/app.min.js?_v=20230714171938"></script>
+	<script src="https://www.google.com/recaptcha/api.js?_v=20230714171938" async defer></script>
 
 
 </body>
